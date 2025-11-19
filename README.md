@@ -86,6 +86,11 @@ This function will start the Glue job when a file is uploaded.
 
 #### 5a. Add Lambda Code
 Paste the contents of `src/lambda_function.py` into the code editor. Make sure the `GLUE_JOB_NAME` variable matches the name of your Glue job (`process_reviews_job`).
+<img width="1134" height="588" alt="515997264-73dc5818-b0ca-43a3-8ea2-a134e2dd37d8" src="https://github.com/user-attachments/assets/f6430009-ce5c-4c12-bfd8-ea896b5ebf0a" />
+<img width="1133" height="581" alt="515997400-37d96098-921e-420a-a180-a462e423e3e9" src="https://github.com/user-attachments/assets/f3d45bbe-1e67-4dd0-ad19-cd083b0d1ff5" />
+<img width="1130" height="586" alt="515997524-a89f1f2e-b35c-40f8-b789-f672fd612b88" src="https://github.com/user-attachments/assets/aaf1db7b-80cc-4c81-aa2b-20431f210eee" />
+
+
 
 #### 5b. Add Lambda Permissions
 The new Lambda role needs permission to start a Glue job.
@@ -125,6 +130,9 @@ Your pipeline is now fully deployed and automated!
 3.  This will trigger the Lambda, which in turn starts the Glue job.
 4.  You can monitor the job's progress in the **AWS Glue** console under the **Monitoring** tab.
 
+## AWS Glue Monitoring screenshot
+<img width="1136" height="588" alt="515997828-42930675-a9c1-48bf-9c70-b315aa19ed1e" src="https://github.com/user-attachments/assets/eeb27126-374a-46b5-8fa9-3f707937d481" />
+
 ---
 
 ## 📈 Query Results
@@ -136,6 +144,8 @@ After the job (which may take 2-3 minutes to run), navigate to your `handsonfina
 * `s3://handsonfinalprocessed/Athena Results/rating_distribution/`
 
 You will also find the complete, cleaned dataset in `s3://handsonfinalprocessed/processed-data/`.
+<img width="1137" height="584" alt="515998038-2e3feb79-ffd3-42f8-bd84-5527b5bd25a5" src="https://github.com/user-attachments/assets/ae841e9d-e65e-440e-96ac-86e55996394d" />
+
 
 ---
 ## 🧹 Cleanup
